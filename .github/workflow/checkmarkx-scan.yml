@@ -1,9 +1,15 @@
 name: Checkmarx One Scan
+
 on:
   workflow_dispatch:
-    branches:
+   branches:
       - main
-  
+
+permissions:
+  contents: read
+  actions: read
+  security-events: write
+
 jobs:
   Security-scan:
     runs-on: ubuntu-latest
