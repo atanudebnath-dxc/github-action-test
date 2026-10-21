@@ -19,6 +19,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Print confirmation
+        run: echo "GitHub Actions workflow executed successfully!"
+
       # - name: Checkmarx One CLI Action
       #   uses: checkmarx/ast-github-action@main #Github Action version
       #   with:
