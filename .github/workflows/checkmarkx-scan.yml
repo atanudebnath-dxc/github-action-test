@@ -1,6 +1,8 @@
 name: Checkmarx One Scan
 
 on:
+  push:
+    branches: main
   workflow_dispatch:
 
 permissions:
