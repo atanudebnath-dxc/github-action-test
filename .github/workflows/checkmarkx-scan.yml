@@ -16,6 +16,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Gitleaks Code Scan
+        run: gitleaks detect source . -r gitleaks-report.json -f json
+ 
       - name: Print confirmation
         run: echo "GitHub Actions workflow executed successfully!"
 
